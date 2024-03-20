@@ -1,0 +1,108 @@
+:root {
+	--main-window-size: 55vmin;
+	--main-window-position-top: 50%;
+	--main-window-position-left: 50%;
+
+	/* weather icon size */
+	--weather-icon-size: calc(var(--main-window-size) * 0.4);
+	--details-icon-size: calc(var(--main-window-size) * 0.1);
+
+	/* background & text colors */
+	--bg-sunny: linear-gradient(0deg, #0062ff 0%, #61efff 100%);
+	--textColor-sunny: #051937;
+}
+
+@font-face {
+	font-family: "tech";
+	src: url(../fonts/ShareTechMono-Regular.ttf);
+}
+@font-face {
+	font-family: "cascadia";
+	src: url(../fonts/Cascadia.ttf);
+}
+
+body {
+	position: relative;
+	background-color: #262626;
+	color: #d3d3d3;
+	min-height: 100vh;
+
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+/* resets */
+.weather-window,
+.weather-window * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.weather-window {
+	position: absolute;
+	top: var(--main-window-position-top);
+	left: var(--main-window-position-left);
+	transform: translate(-50%, -50%);
+	width: var(--main-window-size);
+	font-family: "cascadia", Consolas, "Courier New", monospace;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding: 2.25vmin;
+	align-items: center;
+
+	background: var(--bg-sunny);
+	color: var(--textColor-sunny);
+}
+
+.weather {
+	width: 100%;
+	height: 100%;
+}
+
+.city {
+	font-size: 4.5vmin;
+}
+
+.weather-temp-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2vmin;
+}
+
+.weather-icon {
+	width: var(--weather-icon-size);
+	height: var(--weather-icon-size);
+}
+
+.temperature {
+	font-size: 8vmin;
+}
+
+.description {
+	text-transform: capitalize;
+	font-size: 4.25vmin;
+	margin-top: -1.5vmin;
+	margin-left: 1vmin;
+}
+
+.details-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2vmin;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	font-size: 2.5vmin;
+	word-spacing: -0.5vmin; /* adjusting word spacing for french language */
+}
+
+.details img {
+	width: var(--details-icon-size);
+	height: var(--details-icon-size);
+	margin-right: 1.45vmin;
+}
