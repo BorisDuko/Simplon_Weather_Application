@@ -8,7 +8,8 @@
 
 ## Technical Documentation
 
-This app uses the apiKey from [openweathermap.org](<[https://](https://home.openweathermap.org/api_keys)>)
+This app uses the apiKey from [openweathermap.org](https://openweathermap.org/)
+
 If application doesn't work with the provided apiKey - create a new one and insert in the
 **js/meteo.js** file
 
@@ -42,6 +43,7 @@ Insert city and language to display information:
 ```
 
 For French city names use dashes:
-_Mont-de-Marsan_
-_Saint-Jean-de-Luz_
-_Sainte-Marie-du-Mont_
+
+- _Mont-de-Marsan_
+- _Saint-Jean-de-Luz_
+- _Sainte-Marie-du-Mont_
