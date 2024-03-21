@@ -8,7 +8,7 @@
 
 ## Technical Documentation
 
-This app uses the apiKey from [openweathermap.com](<[https://](https://home.openweathermap.org/api_keys)>)
+This app uses the apiKey from [openweathermap.org](<[https://](https://home.openweathermap.org/api_keys)>)
 If application doesn't work with the provided apiKey - create a new one and insert in the
 **js/meteo.js** file
 

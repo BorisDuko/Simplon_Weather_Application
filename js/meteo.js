@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const apiKey = "d0ce5e34dce3967a489d4377d7c9618d";
+	const apiKey = "bb15f7436bc7d4e8f60b7b9e794888cd";
 	const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
 
 	// DOM access
